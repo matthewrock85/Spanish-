@@ -1,4 +1,6 @@
-export async function POST(req) {
+import { NextRequest } from 'next/server';
+
+export async function POST(req: NextRequest) {
   const { sentence } = await req.json();
 
   const prompt = `
